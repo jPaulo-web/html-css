@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Handjet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Handjet:wght@100..900&family=Permanent+Marker&display=swap');
+
+:root{
+
+
+
+--font1: "Delius", cursive;
+--font2:"Bebas Neue",Arial ;
+
+
+}
+
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+header h1 {
+    font-family: var(--font1);
+    font-size: 4em;
+    color: white;
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+    
+}
+header p{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.9em;
+}
+header p > a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+main {
+    background-color: white;
+}
+main p {
+    text-align: left;
+    width: 310px;
+    margin: 30px 20px;
+    padding: 30px 0px 30px 15px;
+    font-family: var(--font2);
+    font-size: 2.5em;
+    line-height: 35px;
+
+}
+div{
+    background-image: url('imagens/background001.jpg');
+    background-color: black;
+    width: 100%;
+
+}
+div p{
+    padding: 10px 10px;
+    color:white;
+    background-color: rgba(134, 130, 130, 0.089);
+}
+div#fundo{
+
+}
+div#parágrafo{
+    height: 400px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: var(--font2);
+    
+}
+a:hover{
+    text-decoration: underline;
+    
+}
+footer{
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
+footer > p {
+    padding: 10px 0px 10px 0px;
+    text-align: center ;
+}
