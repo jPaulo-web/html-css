@@ -1,16 +1,21 @@
+@charset "UTF-8";
 *{
     margin: 0%;
     padding: 0%;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Handjet:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Handjet:wght@100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+html,body{
+    height: 100vh;
+}
 :root{
 
 
 
---font1: "Delius", cursive;
---font2:"Bebas Neue",Arial ;
+--font1:  "Passion One", sans-serif;
+--font2:"Delius" , cursive;
 
 
 }
@@ -23,10 +28,9 @@ header {
 }
 header h1 {
     font-family: var(--font1);
-    font-size: 4em;
     color: white;
+    font-size: 3.0em;
     padding-top: 30px;
-    margin: auto;
     text-align: center;
     
 }
@@ -43,35 +47,42 @@ header p > a {
     font-size: 1.2em;
     
 }
-main {
+main{
     background-color: white;
 }
-main p {
-    text-align: left;
-    width: 310px;
-    margin: 30px 20px;
-    padding: 30px 0px 30px 15px;
+section{   line-height: 2.0em;
+    text-align:left;
+    min-width: 320px;
     font-family: var(--font2);
-    font-size: 2.5em;
-    line-height: 35px;
-
+    font-weight:bold;
+    font-size: 1.4em;
+    padding-left: 5vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    min-width: 320px;
 }
-div{
-    background-image: url('imagens/background001.jpg');
-    background-color: black;
-    width: 100%;
-
+section.fundo{
+    background:black url(imagens/background001.jpg) center center repeat-y fixed;
+    background-size:cover;
+    height: 415px;
 }
-div p{
-    padding: 10px 10px;
-    color:white;
-    background-color: rgba(134, 130, 130, 0.089);
+section.fundo > p {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.048);
+    padding: 15px 0px 15px 5px;
+    margin-bottom: 10%;
+    border-radius: 5px;
 }
-div#fundo{
-
+section.fundo2 > p {
+    color: white;
+    background-image: linear-gradient(right rgba(0, 0, 0, 0.555) transparent);
+    padding: 15px 0px 15px 10px;
+    border-radius: 5px;
 }
-div#parágrafo{
-    height: 400px;
+section.fundo2{
+    background:black url(imagens/background002.jpg) center center repeat-y fixed;
+    background-size:cover;
+    height: 415px;
 }
 a{
     color: white;
@@ -87,10 +98,10 @@ a:hover{
 footer{
     color: white;
     background-color: black;
-    height: 40px;
+    height: 80px;
     width: 100%;
 }
 footer > p {
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
     text-align: center ;
 }
