@@ -23,13 +23,13 @@ html,body{
 
 header {
     width: 100%;
-    height: 200px;
+    height: 230px;
     background-color: black;
 }
 header h1 {
     font-family: var(--font1);
     color: white;
-    font-size: 3.0em;
+    font-size: 10vh;
     padding-top: 30px;
     text-align: center;
     
@@ -38,58 +38,65 @@ header p{
     margin: auto;
     text-align: center;
     color: white;
-    font-size: 1.9em;
+    font-size: 5vh;
 }
 header p > a {
     
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size:5vh;
     
 }
 main{
     background-color: white;
 }
-section{   line-height: 2.0em;
+section{   
+    line-height: 2.0em;
     text-align:left;
-    min-width: 320px;
+    text-shadow: rgba(128, 128, 128, 0.514) 2px 3px 2px;
     font-family: var(--font2);
-    font-weight:bold;
-    font-size: 1.4em;
-    padding-left: 5vh;
+    font-weight:normal;
+    font-size: 4.1vh;
+    padding-left: 30px;
     padding-top: 10vh;
-    padding-bottom: 10vh;
-    min-width: 320px;
+    padding-bottom: 2.0em;
 }
 section.fundo{
     background:black url(imagens/background001.jpg) center center repeat-y fixed;
     background-size:cover;
-    height: 415px;
+    box-shadow: inset rgba(0, 0, 0, 0.384) 3px 3px 10px 5px;
+    height: 90vh;
 }
 section.fundo > p {
     color: white;
-    background-color: rgba(255, 255, 255, 0.048);
-    padding: 15px 0px 15px 5px;
-    margin-bottom: 10%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.301) ,transparent 60%);
+    box-shadow: rgba(0, 0, 0, 0.432) 2px 2px 7px;
+    padding: 15px 5px 15px 5px;
+    margin-left: -10px;
     border-radius: 5px;
+    display: inline-block;
 }
 section.fundo2 > p {
     color: white;
-    background-image: linear-gradient(right rgba(0, 0, 0, 0.555) transparent);
-    padding: 15px 0px 15px 10px;
+    background-image: linear-gradient(to right, rgba(90, 90, 90, 0.479) ,transparent 60%);
+    box-shadow: rgba(0, 0, 0, 0.432) 2px 2px 7px;
+    text-shadow: black 2px 3px 2px;
+    margin-left: -10px;
+    padding: 15px 5px 15px 5px;
     border-radius: 5px;
+    display: inline-block;
 }
 section.fundo2{
     background:black url(imagens/background002.jpg) center center repeat-y fixed;
     background-size:cover;
-    height: 415px;
+    box-shadow: inset rgba(0, 0, 0, 0.295) 3px 3px 10px 5px;
+    height: 90vh;
 }
 a{
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    font-family: var(--font2);
-    
+    font-family: var(--font2);    
 }
 a:hover{
     text-decoration: underline;
@@ -98,7 +105,7 @@ a:hover{
 footer{
     color: white;
     background-color: black;
-    height: 80px;
+    height: 96px;
     width: 100%;
 }
 footer > p {
