@@ -3,48 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2 Tabela</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tabelas Grandes</title>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+        table{
+            margin: auto;
+            width: 400px;
+            background-color: darkgray;
+            border-collapse: collapse;
+            box-shadow:rgba(0, 0, 0, 0.363) 0px 4px 6px 4px;
+        }
+        h1{
+            text-align: center;
+        }
+        caption{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.712);
+            color: aliceblue;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        thead{
+            background-color: rgba(0, 0, 0, 0.808);
+            color: aliceblue;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(0, 0, 0);
+        }
+        tbody tr:nth-child(2n){
+            background-color: rgba(0, 0, 0, 0.575);
+            color: rgb(0, 0, 0);
+        }
+        td:hover{
+            color: aliceblue;
+            border: 1px,white,solid;
+        }
+        tfoot{
+            background-color:  rgba(0, 0, 0, 0.808);
+            color: aliceblue;
+        }
+        tfoot > tr{
+            background-color:  rgb(0, 0, 0);
+            position: sticky;
+            bottom: -1
+            px;
+        }
+        td,th,tr{
+            border: 2px, black ,solid;
+            height: 30px;
+            text-align: center;
+        }
+        .coluna1{
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    <h1>TABELA DO EXECEL</h1>
-     <table>
-        <tr>
-            <td class="horizontal">a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
-        </tr>
-        <tr >
-        <tr>
-            <td>a2</td>
-            <td>b2</td>
-            <td>c2</td>
-            <td>d2</td>
-            <td>e2</td>
-        </tr>
-        <tr>
-            <td>a3</td>
-            <td>b3</td>
-            <td>c3</td>
-            <td>d3</td>
-            <td>e3</td>
-        </tr>
-        <tr>
-            <td>a4</td>
-            <td>b4</td>
-            <td>c4</td>
-            <td class="numero">d4</td>
-            <td class="numero">e4</td>
-        </tr>
-        <tr>
-            <td>a5</td>
-            <td>b5</td>
-            <td>c5</td>
-            <td class="numero">d5</td>
-            <td class="numero">e5</td>
-        </tr>
-     </table>
+    <h1>TABELAS MAIS ESTRUTURADAS</h1>
+    <table>
+        <caption>Unidades federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th class="borda">Unidade federativa</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="coluna1">Minas Gerais</td>
+                <td>20 539 989</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Rio de Janeiro</td>
+                <td>16 055 174</td>
+            </tr>
+            <tr>
+                <td class="coluna1">São Paulo</td>
+                <td>11 882 965</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Bahia</td>
+                <td>14 141 626</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Pernambuco</td>
+                <td>9 058 931</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Ceará</td>
+                <td>8 794 957</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Pará</td>
+                <td>8 121 025</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Santa Catarina</td>
+                <td>7 610 361</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Goiás</td>
+                <td>7 056 495</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Maranhão</td>
+                <td>6 755 805</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Paraíba</td>
+                <td>3 974 687</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Amazonas</td>
+                <td>3 941 613</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Espírito Santo</td>
+                <td>3 833 712</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Mato Grosso</td>
+                <td>3 658 649</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Rio Grande do Norte</td>
+                <td>3 302 729</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Piauí</td>
+                <td>3 974 687</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Alagoas</td>
+                <td>3 127 683</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Distrito Federal</td>
+                <td>2 817 381</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Mato Grosso do Sul</td>
+                <td>2 757 013</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Sergipe</td>
+                <td>2 210 004</td>
+            </tr>
+            <tr>
+                <td class="coluna1">Rondônia</td>
+                <td>1 581 196</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <th>Total de População :</th>
+                <td><strong>81 006 401</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delesapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. elit. Laboriosam laborum sequi dolorem qui deserunt? Ullam, voluptatum vero sapiente inventore quam ducimus totam quibusdam labore quo ipsam molestiae debitis ex esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim sunt dolores id voluptas, voluptatem ut voluptate doloribus commodi vitae voluptatibus nihil delectus laboriosam ratione expedita pariatur eum tempore rerum. 
+    </p>
 </body>
 </html>
