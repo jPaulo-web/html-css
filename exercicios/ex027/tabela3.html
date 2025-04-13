@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 TABELA</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+        }
+        table{
+            text-align: center;
+            border-collapse: collapse;
+            margin: auto;
+            width: 200px;
+            
+            background-color: aliceblue;
+        }
+        td,th{
+            padding: 10px;
+            border: 1px,black,solid;
+        }
+        th{
+            background-color: black;
+            color: aliceblue;
+            border: 1px,rgb(43, 43, 43),solid;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><strong>1</strong></th>
+            <td rowspan="2">a</td>
+            <td colspan="2">b</td>
+        </tr>
+        <tr>
+            <th><strong>2</strong></th>
+            <td>e</td>
+            <td rowspan="3">f</td>
+        </tr>
+        <tr>
+            <th><strong>3</strong></th>
+            <td>g</td>
+            <td>h</td>
+        </tr>
+        <tr>
+            <th><strong>4</strong></th>
+            <td colspan="2">j</td>
+        </tr>
+    </table>
+</body>
+</html>
