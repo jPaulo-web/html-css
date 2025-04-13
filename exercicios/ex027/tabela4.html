@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 TABELA</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+        }
+        table{
+            text-align: center;
+            border-collapse: collapse;
+            margin: auto;
+            width: 200px;
+            
+            background-color: aliceblue;
+        }
+        caption{
+            padding: 10px;
+
+            font-size: 3.5em;
+        }
+        td,th{
+            padding: 10px;
+            border: 1px,black,solid;
+        }
+        th{
+            background-color: black;
+            color: aliceblue;
+            border: 1px,rgb(43, 43, 43),solid;
+        }
+        .cNome,.cIdade{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col class="cNome">
+        <col class="cSexo">
+        <col class="cIdade">
+        <col class="cProfissão">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Engenheiro Civil</td>
+        </tr>
+        <tr>
+            <td>Mariana</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Designer Gráfico</td>
+        </tr>
+    </table>
+</body>
+</html>
