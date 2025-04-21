@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+    <style>
+        form{
+            margin: auto;
+            background-color: lightgray;
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        legend{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on" >
+        <fieldset>
+            <legend>Dados Cadastrais</legend>
+            <P>
+                <label for="iname">Nome:</label><input type="text" id="iname" size="10" maxlength="20" placeholder="Nome completo" required>
+            </P>
+            <P>
+                <label for="imedia">Média:</label> <input type="number" id="imedia" min="0" max="10" step="0.5" placeholder="0,0" required>
+            </P>
+            <P>
+                <label for="imes">Periodo letivo:</label> <input type="month" id="imes" value="2024-01" required>
+            </P>
+            <P>
+                <label for="idate">Data: </label> <input type="date" id="idate" required>
+            </P>
+            <p>
+                <label for="itime">Horário da prova:</label> <input type="time" id="itime" required >
+            </p>
+            <p>
+                <label for="itel">Contato:</label> <input type="tel" size="13" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(00)00000-0000" required>
+            </p>
+            <p><label for="iemail">Email:</label><input type="email" placeholder=".Com" required></p>
+        </fieldset>
+        <P>
+            <input type="submit" value="Salvar">
+            <input type="reset" value="Redefinir">
+        </P>
+    </form>
+</body>
+</html>
