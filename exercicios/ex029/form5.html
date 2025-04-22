@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando cor</title>
+    <style>
+        form{
+            margin: auto;
+            background-color: lightgray;
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <p><label for="icor">Cor:</label> <input type="color" name="cor" id="icor" value="#ffffff"></p>
+            <p><label for="iranger">Satisfação</label> <input type="range" name="ranger" id="iranger" min="1" max="10" value="1"></p>
+            <p><label for="iarquivo">Enviar foto:</label> <input type="file"></p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Desfazer">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist e seleções</title>
+    <style>
+        form{
+            margin: auto;
+            background-color: lightgray;
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        legend{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <form method="post" autocomplete="on">
+        <p>
+            <label for="iselect">Estado:</label> 
+            <select name="select" id="iselect">
+                <optgroup label="Norte:">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                </optgroup>
+                <optgroup label="Nordeste:">
+                    <option value="AL" selected>Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="list" id="iprof" list="iProf">
+            <datalist id="iProf">
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+                <option>Administrador</option>
+                <option>Cantor</option>
+            </datalist>
+        </p>
+         <p>
+            <label for="imsg">Digitar:</label><br>
+           <textarea name="msg" id="imsg" cols="30" rows="20" placeholder="Digitar..."></textarea>
+         <p>
+            <input type="submit" value="Enviar"> <input type="reset" value="Resetar">
+         </p>
+    </form>
+</body>
+</html>
