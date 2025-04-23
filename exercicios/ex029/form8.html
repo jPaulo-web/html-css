@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Formulario</title>
+</head>
+<body>
+    <h1>Usando Output</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <input type="range" id="ibarra" value="1" oninput="ival.innerHTML=Number(ibarra.value)">
+            <output id="ival">1</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Desfazer">
+        </p>
+    </form>
+</body>
+</html>
