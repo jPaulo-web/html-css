@@ -1,0 +1,44 @@
+@charset "UTR-8";
+*{
+    margin: 0%;
+    padding: 0%
+}
+
+header{
+    background-color: darkgrey;
+    width: 100vw;
+    height: 21vh;
+}
+menu{
+    position: relative;
+    background-color: transparent;
+    width: 190px;
+    height: 30px;
+    transform: translate(-50%,-50%);
+
+    top: 87%;
+    left: 50%;
+}
+nav{
+    display: inline-block;
+    position:relative;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+}
+main{
+    background-color: lightgray;
+    display: block;
+    margin: auto;
+    width: 600px;
+}
+h1{
+    text-align: center;
+}
+p{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
