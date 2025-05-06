@@ -29,9 +29,8 @@ nav{
 }
 main{
     background-color: lightgray;
-    display: block;
     margin: auto;
-    width: 600px;
+    width: 70vw;
 }
 h1{
     text-align: center;

@@ -1,0 +1,6 @@
+@charset "UTR-8";
+
+html,body{
+    background:black url(../imagens/cev-landscape.jpg) center center no-repeat fixed;
+    background-size: cover;
+    }
